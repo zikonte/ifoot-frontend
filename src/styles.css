@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; 
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/316/541/large_2x/natural-background-of-a-green-football-pitch-of-grass-free-photo.jpg");
+	background-color: #7fe258;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image-filter: blur(8px);
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

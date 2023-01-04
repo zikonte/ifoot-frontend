@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Add pitch</title>
+  </head>
+  <body>
+    <br>
+    <form class="center">
+      <H1 class="center"> ADD Pitch :</H1>
+      <div class="form-group">
+        <label for="name">Enter name :</label>
+        <input type="text" name="name" id="name" [(ngModel)]="pitch.name">
+      </div>
+      <div class="form-group">
+        <label for="address">Enter address :</label>
+        <input type="text" name="address" id="address" [(ngModel)]="pitch.address" >
+      </div>
+      <div class="form-group">
+        <label for="format">Enter format</label>
+        <input type="text" name="format" id="format" [(ngModel)]="pitch.format" >
+      </div>
+      <div class="form-group">
+        <label for="price">Enter price :</label>
+        <input type="text" name="price" id="price" [(ngModel)]="pitch.price" >
+      </div>
+      <div class="form-group">
+        <label for="city">Enter city :</label>
+        <input type="text" name="city" id="city" [(ngModel)]="pitch.city" >
+      </div>
+      <div class="form-group">
+        <label for="num_players">Enter number of players :</label>
+        <input type="text" name="num_players" id="num_players" [(ngModel)]="pitch.num_players" >
+      </div>
+      <input (click) = "addPitch(pitch)" class="btn btn-primary" type="submit" value="Submit">
+    </form>
+    <form action="center" (ngSubmit)="getPitch()">
+    <h1>List of Pitches</h1>
+    
+    <table border="1">
+    <thead>
+      <tr>
+        <th><h2>Name:</h2></th> 
+        <th><h3>Address:</h3></th> 
+        <th><h3>Format:</h3></th>
+        <th><h3>Price:</h3></th> 
+        <th><h3>City:</h3></th>
+        <th><h3>Number of Players:</h3></th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngfor ="let pitch of data" >
+          <td><p>{{pitch.name}}</p></td>
+          <td><p>{{pitch.address}}</p></td>
+          <td><p>{{pitch.format}} </p></td>
+          <td><p>{{pitch.price}}</p></td>
+          <td><p>{{pitch.city}}</p></td>
+          <td><p>{{pitch.num_players}}</p></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  </body>
+</html>
