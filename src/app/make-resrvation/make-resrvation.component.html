@@ -1,0 +1,61 @@
+<head>
+    <title>Make a reservation</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Make a reservation</h1>
+        <form>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" class="form-control" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="players">Number of players</label>
+                <input type="number" class="form-control" id="players" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" min="0" step="0.01" required>
+            </div>
+           
+            <div class="form-group">
+                <label for="id_pitch">Pitch Name</label>
+                <input type="number" class="form-control" id="id_pitch" required>
+            </div>
+           
+           
+              
+         
+
+<select id="daysList" [(ngModel)]="selectedDay">
+    <option *ngFor="let day of days" [value]="day">{{ day }}</option>
+  </select>
+<br>
+<select   [(ngModel)]="selectedPlayer">
+    <option *ngFor="let player of players" [value]="player">{{ player }}</option>
+  </select>
+  <br>
+
+            <button type="submit" class="btn btn-success">Confirm</button>
+        </form>
+    </div>
+</body>
+<script>
+    const selectElement = document.getElementById('id_players');
+const tableElement = document.getElementById('players-table');
+
+selectElement.addEventListener('change', () => {
+  const selectedOptions = selectElement.selectedOptions;
+  for (const option of selectedOptions) {
+    const row = tableElement.insertRow();
+    const cell = row.insertCell();
+    cell.innerHTML = option.value;
+  }
+});
+</script>
