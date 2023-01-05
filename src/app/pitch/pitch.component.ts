@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Pitch } from '../models/pitchInterface';
+import { Pitch } from '../models/pitch.models';
 
 
 @Component({

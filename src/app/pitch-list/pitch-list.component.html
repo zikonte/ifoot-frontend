@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Add pitch</title>
+  </head>
+  <body>
+    <br>
+    <!-- <form class="center">
+      <H1 class="center"> ADD Pitch :</H1>
+      <div class="form-group">
+        <label for="name">Enter name :</label>
+        <input type="text" name="name" id="name" [(ngModel)]="pitch.name">
+      </div>
+      <div class="form-group">
+        <label for="address">Enter address :</label>
+        <input type="text" name="address" id="address" [(ngModel)]="pitch.address" >
+      </div>
+      <div class="form-group">
+        <label for="format">Enter format</label>
+        <input type="text" name="format" id="format" [(ngModel)]="pitch.format" >
+      </div>
+      <div class="form-group">
+        <label for="price">Enter price :</label>
+        <input type="text" name="price" id="price" [(ngModel)]="pitch.price" >
+      </div>
+      <div class="form-group">
+        <label for="city">Enter city :</label>
+        <input type="text" name="city" id="city" [(ngModel)]="pitch.city" >
+      </div>
+      <div class="form-group">
+        <label for="num_players">Enter number of players :</label>
+        <input type="text" name="num_players" id="num_players" [(ngModel)]="pitch.num_players" >
+      </div>
+      <input (click) = "addPitch(pitch)" class="btn btn-primary" type="submit" value="Submit">
+    </form> -->
+    <!-- <form action="center" >
+    <h1>List of Pitches</h1>
+    <table class="table table-bordered" border="2">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Format</th>
+          <th>Price</th>
+          <th>City</th>
+          <th>Number of Players</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pitch of pitches" (ngSubmit)="getPitch()">
+          <td>{{ pitch.id }}</td>
+          <td>{{ pitch.name }}</td>
+          <td>{{ pitch.address }}</td>
+          <td>{{ pitch.format }}</td>
+          <td>{{ pitch.price }}</td>
+          <td>{{ pitch.city }}</td>
+          <td>{{ pitch.num_players }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Panoramic_santiago_bernabeu.jpg/1200px-Panoramic_santiago_bernabeu.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>santiago</b></h4>
+      <p>available</p>
+      <a class="button" type="add" href="pitch">show</a>
+    </div>
+  </div> -->
+  <div class="card">
+  <tr *ngFor="let pitch of pitches" (ngSubmit)="getPitch()">
+    <td>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Panoramic_santiago_bernabeu.jpg/1200px-Panoramic_santiago_bernabeu.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>{{ pitch.name }}</b></h4>
+          <p>{{ pitch.format }}</p>
+          <a class="button" type="add" href="pitch">show</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+</div>
+</body>
+</html>
+

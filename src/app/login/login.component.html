@@ -10,12 +10,13 @@
 </head>
 <body>
     <br>
-    <form action="login" >
-        <label for="username">Email :</label><br>
-        <input type="text" id="Email" name="Email" required><br>
-        <label for="password">Password :</label><br>
-        <input type="text" id="password" name="password" required><br>
-        <button type="submit" >Log In</button>
+    <form (ngSubmit)="login(email.value, password.value)">
+      <label for="Email">Email :</label><br>
+      <input type="text" id="email" name="email" [(ngModel)]="email" required><br>
+      <label for="password">Password :</label><br>
+      <input type="text" id="password" name="password" [(ngModel)]="password" required><br>
+      <button type="submit" class="button">Log In</button>
+    
         <div class="text-center">
             <p>Not a member? <a href="register">Register</a></p>
             <p>or sign up with:</p>
