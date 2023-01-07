@@ -8,31 +8,31 @@
       <H1 class="center"> ADD Pitch :</H1>
       <div class="form-group">
         <label for="name">Enter name :</label>
-        <input type="text" name="name" id="name" [(ngModel)]="pitch.name">
+        <input type="text" name="name" id="name" >
       </div>
       <div class="form-group">
         <label for="address">Enter address :</label>
-        <input type="text" name="address" id="address" [(ngModel)]="pitch.address" >
+        <input type="text" name="address" id="address" >
       </div>
       <div class="form-group">
         <label for="format">Enter format</label>
-        <input type="text" name="format" id="format" [(ngModel)]="pitch.format" >
+        <input type="text" name="format" id="format"  >
       </div>
       <div class="form-group">
         <label for="price">Enter price :</label>
-        <input type="text" name="price" id="price" [(ngModel)]="pitch.price" >
+        <input type="text" name="price" id="price"  >
       </div>
       <div class="form-group">
         <label for="city">Enter city :</label>
-        <input type="text" name="city" id="city" [(ngModel)]="pitch.city" >
+        <input type="text" name="city" id="city" >
       </div>
       <div class="form-group">
         <label for="num_players">Enter number of players :</label>
-        <input type="text" name="num_players" id="num_players" [(ngModel)]="pitch.num_players" >
+        <input type="text" name="num_players" id="num_players"  >
       </div>
       <input (click) = "addPitch(pitch)" class="btn btn-primary" type="submit" value="Submit">
     </form>
-    <form action="center" (ngSubmit)="getPitch()">
+    <!-- <form action="center" (ngSubmit)="getPitch()">
     <h1>List of Pitches</h1>
     
     <table border="1">
@@ -57,6 +57,6 @@
         </tr>
       </tbody>
     </table>
-  </form>
+  </form> -->
   </body>
 </html>

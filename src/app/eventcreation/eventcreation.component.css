@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+.div1 {
+    display: flex;
+    align-items: center;
+    margin-right:25%;
+    margin-left: 25%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .div2 {
+    display: flex;
+    align-items: center;
+    margin-right:25%;
+    margin-left: 25%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+=======
+.div1 {
+    display: flex;
+    align-items: center;
+    margin-right:25%;
+    margin-left: 25%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .div2 {
+    display: flex;
+    align-items: center;
+    margin-right:25%;
+    margin-left: 25%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+>>>>>>> origin/Elhaddani
+  }

@@ -38,3 +38,27 @@
     }
   ]
 }
+{
+  "reservations": [
+  {
+  "date": "2022-01-01",
+  "heure_debut": "14:00",
+  "heure_fin": "16:00",
+  "id_pitch": "1",
+  "id_user": "12345",
+  "is_paid": true,
+  "id_players": ["123", "456", "789"],
+  
+  },
+  {
+  "date": "2022-02-14",
+  "heure_debut": "18:00",
+  "heure_fin": "20:00",
+  "id_pitch": "2",
+  "id_user": "67890",
+  "is_paid": false,
+  "id_players": ["333", "444", "555"],
+  
+  }
+  ]
+  }

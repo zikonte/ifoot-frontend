@@ -1,0 +1,46 @@
+.pitch-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .pitch-card {
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .pitch-card-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .pitch-card-details {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .pitch-card-number {
+    margin-right: 10px;
+  }
+  
+  .pitch-card-players {
+    margin-right: 10px;
+  }
+  
+  .pitch-card-price {
+    font-weight: bold;
+    color: green;
+  }
+  
+  .pitch-card-reserve-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
